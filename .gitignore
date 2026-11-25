@@ -1,0 +1,6 @@
+out/
+lib/
+target/
+spotbugsXml.xml
+*.class
+*.swp
