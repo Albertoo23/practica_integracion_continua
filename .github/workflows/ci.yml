@@ -1,0 +1,20 @@
+name: Fujo de práctica de IC
+
+on: push
+
+jobs:
+  compilar:
+    runs-on: ubuntu-latest
+
+  steps:
+   - name: Configurar JDK
+    uses: actions/setup-java@v4
+    with:
+      java-versions: '25'
+      distribution: 'temurin'
+
+   - name: Comñilar con javac
+     run: |
+      mkdir compilados
+      javac -d compilados fuentes/com/iescastelar/*.java
+

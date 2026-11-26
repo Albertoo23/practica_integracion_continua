@@ -1,0 +1,4 @@
+Para compilar hacemos:
+    javac -d compilados fuentes/com/iescastelar/*.java
+Para ejecutar hacemos:
+    java -cp compilados com.iescastelar.DemoCalculadora
